@@ -3,7 +3,7 @@
  * @ Version 0.0.1
  */
 
-var window = (!window) ? this : window;
+var window = {};
 
 var push = Array.prototype.push;
 var slice = Array.prototype.slice;
@@ -206,7 +206,7 @@ var Buffer = module.exports = function(data, encoding) {
       break;
     case 'string':
       length = data.length;
-      encoding = (String(encoding) || 'utf8').toLowerCase();
+      encoding = (encoding) ? String(encoding).toLowerCase() : 'utf8';
 
       switch (encoding) {
         case 'base64':
@@ -455,11 +455,10 @@ Buffer.prototype = {
      * @ Function
      */
   toString: function (encoding, start, end) {
-    var
-      result = '',
-      index,
-      number,
-      length = this.length;
+    var result = '';
+    var index = 0;
+    var number = 0;
+    var length = this.length;
 
     if (start === undefined || start < 0) {
       start = 0;
@@ -477,7 +476,7 @@ Buffer.prototype = {
       return result;
     }
 
-    encoding = String(encoding || 'utf8').toLowerCase();
+    encoding = (encoding) ? String(encoding).toLowerCase() : 'utf8';
     index = start;
     length = end - start;
 
@@ -711,7 +710,7 @@ Buffer.prototype = {
       }
     }
 
-    encoding = (String(encoding) || 'utf8').toLowerCase();
+    encoding = (encoding) ? String(encoding).toLowerCase() : 'utf8';
 
     buffer = new Buffer(data, encoding);
     byteLength = buffer.length;
