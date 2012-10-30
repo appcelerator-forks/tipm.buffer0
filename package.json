@@ -1,0 +1,17 @@
+{
+  "name": "buffer",
+  "repo": "tipm/buffer",
+  "version": "0.0.1",
+  "author": "Christian Sullivan <cs@euforic.co>",
+  "license": "MIT",
+  "description": "Pure JS Buffers ported form Node.js",
+  "main": "tipm-buffer",
+  "keywords": ["buffer","node.js","streams"],
+  "dependencies": {},
+  "development": {},
+  "guid": "xxxxxxx-xxxxxx-xxxxxx",
+  "minsdk": "2.0.0",
+  "scripts": [
+    "tipm-buffer.js"
+  ]
+}
