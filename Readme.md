@@ -536,6 +536,33 @@ Fills the buffer with the specified value. If the offset (defaults to `0`) and e
 var b = new Buffer(50);
 b.fill("h");
 ```
+
+### toArray ([start, end])
+
+### readUInt16 (offset, [isBigEndian, noAssert])
+
+### readInt16 (offset, [isBigEndian, noAssert])
+
+### readUInt32 (offset, [isBigEndian, noAssert])
+
+### readInt32 (offset, [isBigEndian, noAssert])
+
+### readFloat (offset, [isBigEndian, noAssert])
+
+### readDouble (offset, [isBigEndian, noAssert])
+
+### writeUInt16 (value, offset, [isBigEndian, noAssert])
+
+### writeInt16 (value, offset, [isBigEndian, noAssert])
+
+### writeUInt32 (value, offset, [isBigEndian, noAssert])
+
+### writeInt32 (value, offset, [isBigEndian, noAssert])
+
+### writeFloat (value, offset, [isBigEndian, noAssert])
+
+### writeDouble (value, offset, [isBigEndian, noAssert])
+
 ## License
 
 (The MIT License)
