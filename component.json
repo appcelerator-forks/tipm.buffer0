@@ -5,7 +5,7 @@
   "version": "0.0.1",
   "keywords": [],
   "dependencies": {
-    "tipm-assert" : "*"
+    "tipm/assert" : "*"
   },
   "development": {},
   "license": "MIT",
