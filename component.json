@@ -1,0 +1,15 @@
+{
+  "name": "buffer",
+  "repo": "tipm/buffer",
+  "description": "node.js buffer library for titanium",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "tipm-assert" : "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "scripts": [
+    "index.js"
+  ]
+}
