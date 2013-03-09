@@ -3,7 +3,13 @@
  * Buffer - Node.js style buffers
  */
 
-var assert = require('tipm-assert');
+// assert shim to avoid component dep circular ref issue
+
+var assert = {
+  ok: function ( passes, message ) {
+    return (!passes) ? new Error(message): null;
+  }
+};
 
 /**
  * [byteLength description]
